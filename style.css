@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Battambang", sans-serif;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Moul", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.input-group input {
+  grid-column: span 2;
+}
+
+@media (min-width: 400px) {
+  .input-group input:nth-child(odd) {
+    grid-column: span 1;
+  }
+  .input-group input:nth-child(even) {
+    grid-column: span 1;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: "Battambang", sans-serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #00bfff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+}
+
+button {
+  font-family: "Moul", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: #fff;
+  padding: 12px;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  transform: translateY(-3px);
+}
+
+.results {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 2px solid #0072ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.results:hover {
+  background-color: #e2e6ea;
+}
+
+h2 {
+  font-family: "Moul", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #0072ff;
+  line-height: 1.4;
+}
+
+footer {
+  font-family: "Battambang", sans-serif;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  border-top: 2px solid #0072ff;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+footer a {
+  color: #0072ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer:hover {
+  color: #0072ff;
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+}

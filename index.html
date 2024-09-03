@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BacII Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        គណនាពិន្ទុបាក់ឌុប <br />
+        (ថ្នាក់វិទ្យាសាស្ត្រពិត)
+      </h1>
+      <input type="number" placeholder="ភាសាខ្មែរ" id="K" />
+      <input type="number" placeholder="គណិតវិទ្យា" id="M" />
+      <input type="number" placeholder="រូបវិទ្យា" id="P" />
+      <input type="number" placeholder="គីមីវិទ្យា" id="C" />
+      <input type="number" placeholder="ជីវវិទ្យា" id="B" />
+      <input type="number" placeholder="ប្រវត្តិវិទ្យា" id="H" />
+      <input type="number" placeholder="អង់គ្លេស" id="E" />
+      <button type="button" onclick="show_result()">បង្ហាញលទ្ធផល</button>
+    </div>
+
+    <div class="results">
+      <h2>ពិន្ទុសរុប៖ <span id="total"></span></h2>
+      <h2>និទ្ទេស៖ <span id="mention"></span></h2>
+      <h2>លទ្ធផល៖ <span id="final_result"></span></h2>
+    </div>
+
+    <footer>© Copyright 2024, Chungsiang Roeurn. All Rights Reserved.</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
